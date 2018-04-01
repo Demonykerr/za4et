@@ -17,20 +17,21 @@
     <div class="home_content">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="info_site">
-                        <img src="../../static/images/home/info.png">
-                        <div class="opac_left"></div>
-                        <div class="text_inf_block">Добро пожаловать на сайт,
+
+                    <div class="block block--info">
+                        <div class="block__body block__body--info">
+                        <div class="block__text">Добро пожаловать на сайт,
                             <p>позволяющий сделать</p>
                             <p>данные об успеваемости</p>
                             <p>более централизованными.</p>
-                            <p class="opportunities">Здесь вы можете:</p>
+                            <p>Здесь вы можете:</p>
                         </div>
-                    </div>
-                    <div class="date_time">
-                        <div class="text_da_ti">
-                            <div class="sheet_date">
+                        </div>
+                        </div>
+                    <div class="block block--date">
+                        <div class="block__body block__body--date">
+                        <div class="block__text--date"></div>
+                        <div class="block__text">
                                 <div class="number_text">
                                     <script type="text/javascript">
                                         var d = new Date();
@@ -59,26 +60,29 @@
                                 </p>
 {#                                <p id="week" class="week_text"></p>#}
                             </div>
-                        </div>
-                        <img src="../../static/images/home/da_ti.png">
-                        <div class="opac_left"></div>
+
+
+
+                            </div>
                     </div>
-                    <a class="block_news" href="{% url 'news' %}">
-                        <img src="../../static/images/home/news.png">
-                        <div class="sheet_op"></div>
-                        <div class="text_ne_block">Узнать актуальные <p>новости</p></div>
+
+                    <a class="block block--news" href="{% url 'news' %}">
+                        <div class="block__body block__body--news ">
+                        <div class="block__text">Узнать актуальные <p>новости</p></div>
+                        </div>
                     </a>
-                    <a class="block_attendance_log" href="{% url 'journals' %}">
-                        <img src="../../static/images/home/att_log.png">
-                        <div class="sheet_op"></div>
-                        <div class="text_att_block">Посмотреть данные об <p>успеваемости</p></div>
+
+                    <a class="block block--uspev" href="{% url 'journals' %}">
+                        <div class="block__body block__body--uspev">
+                        <div class="block__text">Посмотреть данные об <p>успеваемости</p></div>
+                        </div>
                     </a>
-                    <a class="block_library" href="{% url 'library' %}">
-                        <img src="../../static/images/home/library.png">
-                        <div class="sheet_op"></div>
-                        <div class="text_li_block">Найти учебные <p>материалы</p></div>
+                    <a class="block block--mater" href="{% url 'library' %}">
+                        <div class="block__body block__body--mater">
+                        <div class="block__text">Найти учебные <p>материалы</p></div>
+                        </div>
                     </a>
-                </div>
+
             </div>
         </div>
     </div>

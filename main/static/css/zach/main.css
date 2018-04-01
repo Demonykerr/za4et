@@ -295,6 +295,7 @@ a:hover {
     transition: all .6s ease;
 }
 
+
 .header_topline a:hover i {
     color: #ffffff;
 }
@@ -320,11 +321,13 @@ a:hover {
     margin: 0;
 }
 
+
 .login_link {
     float: right;
     margin-left: 20px;
     color: #ffffff;
 }
+
 
 .login_link:hover {
     cursor: pointer;
@@ -342,7 +345,7 @@ a:hover {
     color: #ffffff;
     display: none;
 }
-.container .main_menu_mini{
+.main_menu_mini{
     display: none;
 }
 
@@ -703,6 +706,7 @@ a:hover {
 
 .logotype {
     text-align: center;
+
 }
 
 .logo_up {
@@ -733,6 +737,7 @@ a:hover {
     margin: 20px 0;
     height: 80px;
 }
+
 
 /*---> header-head end <---*/
 
@@ -839,13 +844,12 @@ a:hover {
 .main_footer .bot_text {
     position: relative;
     margin-top: 10px;
-    padding-top: 10px;
+    padding: 10px 0;
     text-align: center;
     font-size: 16px;
     background-color: #52011A;
     color: #ffffff;
     width: 100%;
-    height: 40px;
 }
-
+.logot
 /*---> footer end <---*/
