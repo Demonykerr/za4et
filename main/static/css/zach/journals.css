@@ -1,128 +1,584 @@
 /*---> university blocks <---*/
+.journals_content{
 
-.university{
+}
+
+.university {
     position: relative;
     width: 100%;
     height: 80px;
-    margin-top: 15px;
+    z-index: 999;
+    display: flex;
+}
+.block_university{
+    position: relative;
+    width: 100px;
+    display: inline-block;
+    height: 80px;
+    flex-grow: 1;
+    margin-left: 5px;
 }
 
-.university .ictis_block{
+
+.university .inep_block{
+
+}
+.university .irtsu_block{
+    display: none;
+}
+.university .iues_block{
+    display: none;
+}
+.university .ictis_block {
     position: absolute;
     left: 0;
     width: 292px;
     height: 80px;
     background-color: #cccccc;
-    z-index: 1000;
+    z-index: 1100;
     clip-path: polygon(0 0, 272px 0, 100% 100%, 0 100%);
+    cursor: pointer;
 }
 
-.university .inep_block{
+.text_ictis {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.text_ictis img {
+    margin-top: -5px;
+    height: 30px;
+}
+
+.ictis_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.ictis_block:hover .ictis_opac{
+    background-color: #52011A;
+    opacity: 1;
+}
+
+/*.ictis_opac.active{*/
+    /*background-color: #0F1F2D;*/
+    /*opacity: 1;*/
+/*}*/
+
+.back_ictis {
+    position: absolute;
+    height: 80px;
+    width: 293px;
+    z-index: 1001;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.ictis_block:hover .back_ictis{
+    transform: scale(1.15);
+}
+
+/*.back_ictis.active{*/
+    /*transform: scale(1.15);*/
+/*}*/
+
+.radio_ictis{
+    position: absolute;
+    z-index: 1050;
+    width: 293px;
+    height: 200px;
+    cursor: pointer;
+}
+
+/*--------------------*/
+
+.university .inep_block {
     position: absolute;
     left: 282px;
     width: 293px;
     height: 80px;
     background-color: #cccccc;
-    z-index: 1000;
+    z-index: 1100;
     clip-path: polygon(0 0, 273px 0, 100% 100%, 20px 100%);
+    cursor: pointer;
 }
 
-.university .rtf_block{
+.text_inep {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.text_inep img {
+    height: 35px;
+}
+
+.inep_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.inep_block:hover .inep_opac{
+    background-color: #52011A;
+    opacity: 1;
+}
+
+/*.inep_opac.active{*/
+    /*background-color: #0F1F2D;*/
+    /*opacity: 1;*/
+/*}*/
+
+.back_inep {
+    position: absolute;
+    height: 80px;
+    width: 293px;
+    z-index: 1001;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.inep_block:hover .back_inep{
+    transform: scale(1.15);
+}
+
+/*.back_inep.active{*/
+    /*transform: scale(1.15);*/
+/*}*/
+
+.radio_inep{
+    position: absolute;
+    z-index: 1050;
+    width: 293px;
+    height: 200px;
+    cursor: pointer;
+}
+
+/*--------------------*/
+
+.university .irtsu_block {
     position: absolute;
     right: 282px;
     width: 293px;
     height: 80px;
     background-color: #cccccc;
-    z-index: 1000;
+    z-index: 1100;
     clip-path: polygon(0 0, 273px 0, 100% 100%, 20px 100%);
+    cursor: pointer;
 }
 
-.university .iues_block{
+.text_irtsu {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.text_irtsu img {
+    height: 30px;
+    margin-top: -5px;
+}
+
+.irtsu_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.irtsu_block:hover .irtsu_opac{
+    background-color: #52011A;
+    opacity: 1;
+}
+
+/*.irtsu_opac.active{*/
+    /*background-color: #AC0439;*/
+    /*opacity: 1;*/
+/*}*/
+
+.back_irtsu {
+    position: absolute;
+    height: 80px;
+    width: 293px;
+    z-index: 1001;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.irtsu_block:hover .back_irtsu{
+    transform: scale(1.15);
+}
+
+/*.back_irtsu.active{*/
+    /*transform: scale(1.15);*/
+/*}*/
+
+.radio_irtsu{
+    position: absolute;
+    z-index: 1050;
+    width: 293px;
+    height: 200px;
+    cursor: pointer;
+}
+
+/*--------------------*/
+
+.university .iues_block {
     position: absolute;
     right: 0;
     width: 292px;
     height: 80px;
     background-color: #cccccc;
+    z-index: 1100;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%);
-    z-index: 1000;
+    cursor: pointer;
+}
+
+.text_iues {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    width: 100%;
+    z-index: 1005;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.text_iues img {
+    height: 30px;
+    margin-top: -5px;
+}
+
+.iues_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.iues_block:hover .iues_opac{
+    background-color: #52011A;
+    opacity: 1;
+}
+
+/*.iues_opac.active{*/
+    /*background-color: #A0D233;*/
+    /*opacity: 1;*/
+/*}*/
+
+.back_iues {
+    position: absolute;
+    height: 80px;
+    width: 293px;
+    z-index: 1001;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+
+.iues_block:hover .back_iues{
+    transform: scale(1.15);
+}
+
+/*.back_iues.active{*/
+    /*transform: scale(1.15);*/
+/*}*/
+
+.radio_iues{
+    position: absolute;
+    z-index: 1050;
+    width: 293px;
+    height: 200px;
+    cursor: pointer;
 }
 
 /*---> university blocks end <---*/
 
 /*---> directions <---*/
 
-.directions{
+.directions {
     position: relative;
     height: 80px;
     margin-top: 10px;
+    display: flex;
+
+}
+.block_directions{
+    position: relative;
+    width: 387px;
+    bottom: 5px;
+    display: inline-block;
+    z-index: 1000;
+    background-color: #cccccc;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-left: 5px;
+    height: 80px;
+    left: 0;
+}
+.block_directions1{
+    position: relative;
+    width: 387px;
+    bottom: 5px;
+    display: inline-block;
+    z-index: 1000;
+    background-color: #cccccc;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-left: 5px;
+    height: 80px;
+    left: 0;
+}
+.block_directions2{
+    position: relative;
+    width: 387px;
+    bottom: 5px;
+    display: inline-block;
+    z-index: 1000;
+    background-color: #cccccc;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-left: 5px;
+    height: 80px;
+    left: 0;
+}
+.direc_opac{
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    bottom: 1px;
+    z-index: 1002;
+}
+.block_directions{
+    background-image: url("jrnls/jrnls.bakalavr.png");
+}
+.block_directions1{
+background-image: url("jrnls/jrnls.specialist.png");
+}
+.block_directions2{
+background-image: url("jrnls/jrnls.magistr.png");
 }
 
-.directions .baccalaureate{
+
+.directions .baccalaureate {
     position: absolute;
     left: 0;
     height: 80px;
     width: 387px;
+    z-index: 1000;
     background-color: #cccccc;
     clip-path: polygon(0 0, 100% 0, 367px 100%, 0 100%);
+    cursor: pointer;
 }
 
-.directions .specialty{
+.baccalaureate img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+
+.directions .specialty {
     position: absolute;
     right: 377px;
     height: 80px;
     width: 386px;
+    z-index: 1000;
     background-color: #cccccc;
     clip-path: polygon(20px 0, 100% 0, 367px 100%, 0 100%);
+    cursor: pointer;
 }
 
-.directions .magistracy{
+.specialty img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+
+.directions .magistracy {
     position: absolute;
     right: 0;
     height: 80px;
     width: 387px;
+    z-index: 1000;
     background-color: #cccccc;
     clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%);
+    cursor: pointer;
 }
+
+.magistracy img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+}
+
+/*.direc_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}*/
 
 /*---> directions end <---*/
 
 /*---> selected journals <---*/
-
-.selected_journals{
+.selected_journals {
     position: relative;
     height: 640px;
-    margin-top: 10px;
+    margin-top: 1px;
+    display: flex;
 }
-
-.all_journals_rate{
+.all_journals_rate {
     position: absolute;
     left: 0;
     height: 640px;
-    width: 565px;
+    width: 512px;
     background-color: #cccccc;
-    clip-path: polygon(0 0, 367px 0, 100% 100%, 0 100%);
+    z-index: 1000;
+    clip-path: polygon(0 0, 368px 0, 100% 100%, 0 100%);
 }
 
-.window_with_journals{
+.all_journals_rate img {
+    position: absolute;
+    left: 0;
+    height: 640px;
+    z-index: 1001;
+}
+
+.window_with_journals {
     position: absolute;
     right: 0;
     height: 640px;
     width: 762px;
     background-color: #cccccc;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 198px 100%);
+    z-index: 1000;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 144px 100%);
+}
+
+.window_with_journals img {
+    position: absolute;
+    /*right: -5px;*/
+    width: 762px;
+    z-index: 1001;
+}
+.journ_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    bottom: 1px;
+}
+.block_journals1{
+    position: relative;
+    width: 512px;
+    height: 640px;
+    background-color: #cccccc;
+    flex-grow: 1;
+    margin-left: 5px;
+    display: inline-block;
+}
+.block_journals2{
+    position: relative;
+    width: 512px;
+    height: 640px;
+    background-color: #cccccc;
+    flex-grow: 1;
+    margin-left: 5px;
+    display: inline-block;
+}
+.block_journals1{
+background-image: url("jrnls/jrnls.lft.png");
+}
+.block_journals2{
+background-image: url("jrnls/jrnls.rght.png");
 }
 
 /*---> selected journals end <---*/
 
 /*---> search journals <---*/
 
-.search_journals{
+.search_journals {
     position: relative;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 10px;/*10px;*/
+    margin-bottom: 30px;/*30px;*/
     width: 100%;
     height: 80px;
     background-color: #cccccc;
+    max-width: 100%;
+    display: block;
+    margin-left: 5px;
+}
+
+.search_journals img {
+    position: absolute;
+    height: 80px;
+    z-index: 1001;
+    max-width: 100%;
+}
+
+.univ_search_opac {
+    position: absolute;
+    background-color: #333233;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    z-index: 1002;
+    max-width: 100%;
 }
 
 /*---> search journals end <---*/

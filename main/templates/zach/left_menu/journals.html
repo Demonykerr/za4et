@@ -6,6 +6,7 @@
 
 <head>
     {% block title %}Журналы{% endblock %}
+
 </head>
 
 <body>
@@ -13,51 +14,64 @@
     <div class="journals_content">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-xs-12">
                     <div class="university">
-                        <div class="ictis_block">
-
+                        <div class="block_university block_univ_ictis">
+                            <input type="radio" name="universities" class="radio_ictis" value="ictis" checked="checked">
+                            <img src="../../../static/images/jrnls/jrnls.ictis.png" class="back_ictis">
+                            <div class="ictis_opac"></div>
+                            <div class="text_ictis"><img src="../../../static/images/jrnls/ictis.logo.png"> ИКТИБ</div>
                         </div>
-                        <div class="inep_block">
-
+                        <div class="block_university block_univ_inep">
+                            <input type="radio" name="universities" class="radio_inep" value="inep">
+                            <img src="../../../static/images/jrnls/jrnls.inep.png" class="back_inep">
+                            <div class="inep_opac"></div>
+                            <div class="text_inep"><img src="../../../static/images/jrnls/inep.logo.png"> ИНЭП</div>
                         </div>
-                        <div class="rtf_block">
-
+                        <div class="block_university block_univ_irtsu">
+                            <input type="radio" name="universities" class="radio_irtsu" value="irtsu">
+                            <img src="../../../static/images/jrnls/jrnls.irtsu.png" class="back_irtsu">
+                            <div class="irtsu_opac"></div>
+                            <div class="text_irtsu"><img src="../../../static/images/jrnls/irtsu.logo.png"> ИРТСУ</div>
                         </div>
-                        <div class="iues_block">
-
+                        <div class="block_university block_univ_iues">
+                            <input type="radio" name="universities" class="radio_iues" value="iues">
+                            <img src="../../../static/images/jrnls/jrnls.iues.png" class="back_iues">
+                            <div class="iues_opac"></div>
+                            <div class="text_iues"><img src="../../../static/images/jrnls/iues.logo.png"> ИУЭС</div>
                         </div>
                     </div>
 
                     {#--------------------#}
 
                     <div class="directions">
-                        <div class="baccalaureate">
-
+                        <div class="block_directions block_direc_baccalaureate">
+                            <div class="direc_opac"></div>
                         </div>
-                        <div class="specialty">
-
+                        <div class="block_directions1 block_direc_specialty">
+                            <div class="direc_opac"></div>
                         </div>
-                        <div class="magistracy">
-
+                        <div class="block_directions2 block_direc_magistracy">
+                            <div class="direc_opac"></div>
                         </div>
                     </div>
 
                     {#--------------------#}
 
                     <div class="selected_journals">
-                        <div class="all_journals_rate">
-
+                        <div class="block_journals1 block_all_journals_rate">
+                            <div class="journ_opac"></div>
                         </div>
-                        <div class="window_with_journals">
-
+                        <div class="block_journals2 block_window_with_journals">
+                            <div class="journ_opac"></div>
                         </div>
                     </div>
 
                     {#--------------------#}
 
                     <div class="search_journals">
-
+                        <img src="../../../static/images/jrnls/jrnls.srch.png">
+                        <div class="univ_search_opac"></div>
                     </div>
                 </div>
             </div>

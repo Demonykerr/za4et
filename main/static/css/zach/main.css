@@ -324,8 +324,11 @@ a:hover {
 
 .login_link {
     float: right;
-    margin-left: 20px;
     color: #ffffff;
+    margin-right: 3px;
+}
+.contacts_head{
+    margin-right: 3px;
 }
 
 
