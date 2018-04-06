@@ -449,6 +449,30 @@ input.toggleMenu:checked ~ul{
     }
 }
 @media (min-width: 1200px) {
+    .block_library_tree{
+        position: absolute;
+    left: 0;
+    height: 720px;
+    width: 512px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 368px 0, 100% 100%, 0 100%);
+    }
+    .block_library_found_files{
+        position: absolute;
+    right: 0;
+    height: 630px;
+    width: 762px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 126px 100%);
+    }
+    .library_download{
+        display: block;
+    }
+    .library_download1{
+        display: none;
+    }
     .login_link {
     float: right;
     margin-left: 20px;

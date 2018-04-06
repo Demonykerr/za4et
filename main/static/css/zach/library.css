@@ -1,0 +1,89 @@
+.library_content{
+    /*flex: 1 0 auto;*/
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 999;
+}
+
+/* ---> library search <--- */
+
+.library_search{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: #cccccc;
+    margin-left: 5px;
+}
+
+/* ---> library search end <--- */
+
+/* ---> files block <--- */
+.block_library{
+    position: relative;
+    width: 500px;
+    display: inline-block;
+    height: 720px;
+    background-color: #cccccc;
+    z-index: 1000;
+    flex-grow: 1;
+    margin-left: 5px;
+}
+.files_block{
+    position: relative;
+    height: 720px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.tree_files{
+    position: absolute;
+    left: 0;
+    height: 720px;
+    width: 512px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 368px 0, 100% 100%, 0 100%);
+}
+
+.found_files{
+    position: absolute;
+    right: 0;
+    height: 630px;
+    width: 762px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 126px 100%);
+    display: none;
+}
+
+.library_download{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    width: 634px;
+    background-color: #cccccc;
+    z-index: 1000;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 16px 100%);
+    border: none;
+    display: none;
+    margin-top: 5px;
+}
+.library_download1{
+    position: relative;
+    height: 80px;
+    width: 1140px;
+    background-color: #cccccc;
+    z-index: 1000;
+    border: none;
+    display: block;
+    bottom: 20px;
+    max-width: 100%;
+    margin-left: 5px;
+}
+
+
+/* ---> files block end <--- */
