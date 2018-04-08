@@ -1,0 +1,61 @@
+.news_content{
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 999;
+}
+
+/* ---> news block university <---*/
+
+.ne_block_univs{
+    position: relative;
+    height: 80px;
+    width: 100%;
+}
+
+.ne_all_univs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 220px;
+    background-color: #cccccc;
+}
+
+.ne_ictis_univ{
+    position: absolute;
+    top: 0;
+    left: 230px;
+    height: 80px;
+    width: 220px;
+    background-color: #cccccc;
+}
+
+.ne_inep_univ{
+    position: absolute;
+    top: 0;
+    left: 460px;
+    height: 80px;
+    width: 220px;
+    background-color: #cccccc;
+}
+.ne_irtsu_univ{
+    position: absolute;
+    top: 0;
+    right: 230px;
+    height: 80px;
+    width: 220px;
+    background-color: #cccccc;
+}
+
+.ne_iues_univ{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80px;
+    width: 220px;
+    background-color: #cccccc;
+}
+
+/* ---> news block university end <---*/
